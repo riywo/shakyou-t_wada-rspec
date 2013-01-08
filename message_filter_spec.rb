@@ -11,7 +11,7 @@ describe MessageFilter do
     subject { MessageFilter.new('foo') }
     it_should_behave_like 'MessageFilter with argument "foo"'
     it 'ng_words should not be empty' do
-      subject.ng_words.empty?.should == false
+      subject.ng_words.should_not be_empty
     end
   end
 
